@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fireTopLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:keepScreenOn="true">
+  <ImageView
+      android:id="@+id/previewPane"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:scaleType="fitStart">
+  </ImageView>
+
+  <com.menupan.translate.apps.common.GraphicOverlay
+      android:id="@+id/previewOverlay"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginStart="0dp"
+      android:layout_marginTop="0dp" />
+
+  <FrameLayout
+      android:id="@+id/controlPanel"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentStart="true"
+      android:background="@color/cardview_dark_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/getImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_3"
+            android:text="메뉴판\n선택"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:textSize="15dp" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="글자 크기"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/textSizeSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="글자 색"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/textColorSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="번역 언어"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/featureSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+      </LinearLayout>
+    </LinearLayout>
+  </FrameLayout>
+  <com.google.android.gms.ads.AdView
+      xmlns:ads="http://schemas.android.com/apk/res-auto"
+      android:id="@+id/adView"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_centerHorizontal="true"
+      android:layout_alignParentTop="true"
+      ads:adSize="BANNER"
+      ads:adUnitId="@string/banner_ad_unit_id">
+  </com.google.android.gms.ads.AdView>
+</RelativeLayout>

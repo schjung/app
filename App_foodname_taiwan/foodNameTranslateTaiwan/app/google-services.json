@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1005763547769",
+    "firebase_url": "https://menupantranslate.firebaseio.com",
+    "project_id": "menupantranslate",
+    "storage_bucket": "menupantranslate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005763547769:android:5094ed0545b5839f417aa8",
+        "android_client_info": {
+          "package_name": "com.menupan.translate.apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005763547769-po2jn0squbf4uetbtu279dvlnjionepl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW3on_m9ZgvjqNQc4qA6LH5Umqf68N9kA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1005763547769-po2jn0squbf4uetbtu279dvlnjionepl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
